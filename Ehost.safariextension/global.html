@@ -18,20 +18,20 @@
 				captionTranslations[navigator.language] ||
 				captionTranslations[navigator.language.substring(0, 2)] ||
 				captionTranslations[navigator.language.default];
-			event.contextMenu.appendContextMenuItem("upload", caption);
+			event.contextMenu.appendContextMenuItem('upload', caption);
 		}
 	}
 
 	var performCommand = function(event) {
-		if (event.command === "upload") {
+		if (event.command === 'upload') {
 			var currentWindow = safari.application.activeBrowserWindow;
 			var newTab = currentWindow.openTab('foreground');
 			newTab.url = 'http://eho.st/' + event.userInfo.imageUrl;
 		}
 	};
 
-	safari.application.addEventListener("contextmenu", handleContextMenu, false);
-	safari.application.addEventListener("command", performCommand, false);
+	safari.application.addEventListener('contextmenu', handleContextMenu, false);
+	safari.application.addEventListener('command', performCommand, false);
 })();
 
 </script>
