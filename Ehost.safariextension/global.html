@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+	By Sijmen Mulder <sjmudler@gmail.com>
+	Published under the BSD licence.
+-->
+<script>
+
+(function() {
+	var handleContextMenu = function(event) {
+		if (event.userInfo && event.userInfo.isUploadableImage) {
+			event.contextMenu.appendContextMenuItem("upload", "Upload Image to eHo.st");
+		}
+	}
+
+	var performCommand = function(event) {
+		if (event.command === "upload") {
+			var currentWindow = safari.application.activeBrowserWindow;
+			var newTab = currentWindow.openTab('foreground');
+			newTab.url = 'http://eho.st/' + event.userInfo.imageUrl;
+		}
+	};
+
+	safari.application.addEventListener("contextmenu", handleContextMenu, false);
+	safari.application.addEventListener("command", performCommand, false);
+})();
+
+</script>
