@@ -6,9 +6,19 @@
 <script>
 
 (function() {
+	var captionTranslations = {
+		'default': 'en',
+		'en': 'Upload Image to eHo.st',
+		'nl': 'Upload afbeelding naar eHo.st'
+	}
+	
 	var handleContextMenu = function(event) {
 		if (event.userInfo && event.userInfo.isUploadableImage) {
-			event.contextMenu.appendContextMenuItem("upload", "Upload Image to eHo.st");
+			var caption = 
+				captionTranslations[navigator.language] ||
+				captionTranslations[navigator.language.substring(0, 2)] ||
+				captionTranslations[navigator.language.default];
+			event.contextMenu.appendContextMenuItem("upload", caption);
 		}
 	}
 
