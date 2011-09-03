@@ -9,7 +9,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>eHo.st</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.hyzkia.ehost.safari</string>
+	<string>com.hyzkia.EhostSafari</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
@@ -46,6 +46,6 @@
 		</dict>
 	</dict>
 	<key>Website</key>
-	<string>http://eho.st</string>
+	<string>https://github.com/sjmulder/ehost-safari</string>
 </dict>
 </plist>
