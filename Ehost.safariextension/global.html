@@ -10,7 +10,7 @@
 		'default': 'en',
 		'en': 'Upload Image to eHo.st',
 		'nl': 'Upload afbeelding naar eHo.st'
-	}
+	};
 	
 	var handleContextMenu = function(event) {
 		if (event.userInfo && event.userInfo.isUploadableImage) {
@@ -20,7 +20,7 @@
 				captionTranslations[navigator.language.default];
 			event.contextMenu.appendContextMenuItem('upload', caption);
 		}
-	}
+	};
 
 	var performCommand = function(event) {
 		if (event.command === 'upload') {
