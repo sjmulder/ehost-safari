@@ -13,7 +13,7 @@
 	};
 	
 	var handleContextMenu = function(event) {
-		if (event.userInfo && event.userInfo.isUploadableImage) {
+		if (event.userInfo && event.userInfo.imageUrl) {
 			var caption = 
 				captionTranslations[navigator.language] ||
 				captionTranslations[navigator.language.substring(0, 2)] ||
