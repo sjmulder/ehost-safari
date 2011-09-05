@@ -32,7 +32,7 @@
 		</dict>
 	</dict>
 	<key>Description</key>
-	<string>Adds an “Upload Image to eHo.st” context menu item.</string>
+	<string>Adds a context menu item to upload images to eHo.st.</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
