@@ -1,4 +1,4 @@
-Adds an “Upload Image to eHo.st” context menu item. (See: http://eho.st)
+eHo.st is a community-owned image hosting service. This plugin lets you upload images directly from a widget and the context menu on any web page.
 
 New in version 1.1:
 
